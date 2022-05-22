@@ -1,0 +1,235 @@
+:root {
+  --text-color: #757575;
+  --h-color: #212121;
+  --akcent-color: #2196f3;
+  --white-color: #ffffff;
+
+  --bg-nav: #ffffff;
+  --bg-img: #eeeeee;
+  --bg-hero: #2f303a;
+
+  --button-color: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: white;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ----------------------------ХЕДЕР---------------------------- */
+/* ЛОГО */
+.logo-blue,
+.logo-black,
+.logo-white {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--akcent-color);
+}
+
+.logo-black {
+  color: #000000;
+}
+
+.logo-white {
+  color: var(--white-color);
+}
+/* КІНЕЦЬ ЛОГО */
+
+.header {
+  background-color: var(--white-color);
+}
+
+.nav-text,
+.nav-contact {
+  color: var(--h-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--akcent-color);
+}
+
+.nav-text:hover,
+.nav-text:focus {
+  color: var(--akcent-color);
+}
+
+.nav-contact {
+  color: var(--text-color);
+}
+/* ----------------------------КІНЕЦЬ ХЕДЕРА---------------------------- */
+
+/* ----------------------------БАНЕР---------------------------- */
+.main-baner {
+  background-color: var(--bg-hero);
+}
+
+.baner-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.button-baner {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--akcent-color);
+  color: var(--white-color);
+}
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--akcent-color);
+  color: var(--white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--akcent-color);
+  color: var(--white-color);
+}
+
+/* ----------------------------КІНЕЦЬ БАНЕРА---------------------------- */
+
+/* ----------------------------ОСОБЛИВОСТІ---------------------------- */
+.specifics {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--h-color);
+}
+
+.specifics-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ----------------------------КІНЕЦЬ ОСОБЛИВОСТІ---------------------------- */
+
+/* ----------------------------ЧИМ ЗАЙМАЄМОСЬ---------------------------- */
+.works,
+.teem {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+}
+/* ----------------------------КІНЕЦЬ ЧИМ ЗАЙМАЄМОСЬ---------------------------- */
+
+/* ----------------------------КОМАНДА---------------------------- */
+.member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+}
+
+.position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about-us {
+  background-color: var(--button-color);
+}
+/* ----------------------------КІНЕЦЬ КОМАНДИ---------------------------- */
+
+/* ----------------------------ФУТЕР---------------------------- */
+.footer {
+  background-color: var(--bg-hero);
+}
+.address,
+.contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------------КІНЕЦЬ ФУТЕРА---------------------------- */
+
+/* ----------------------------ДРУГА СТОРІНКА---------------------------- */
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--button-color);
+  color: var(--h-color);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--akcent-color);
+  color: var(--white-color);
+}
+
+.example {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--h-color);
+}
+
+.direction {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
