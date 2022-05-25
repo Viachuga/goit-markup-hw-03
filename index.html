@@ -11,130 +11,141 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Верхня лінія -->
     <header class="header">
-      <nav>
-        <a href="./index.html" class="logo link"
+      <div class="container header-all">
+      <nav class="main-nav">
+        <a href="./index.html" class="logo-link link"
           ><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a
         >
-        <ul class="list">
-          <li><a href="#" class="nav-text current link">Студія</a></li>
-          <li><a href="portfolio.html" class="nav-text link">Портфоліо</a></li>
-          <li><a href="#" class="nav-text link">Контакти</a></li>
+        <ul class="list-nav">
+          <li class="item-nav"><a href="#" class="nav-text current link">Студія</a></li>
+          <li class="item-nav"><a href="portfolio.html" class="nav-text link">Портфоліо</a></li>
+          <li class="item-nav"><a href="#" class="nav-text link">Контакти</a></li>
         </ul>
       </nav>
 
-      <ul class="list">
-        <li>
+      <ul class="list-auth">
+        <li class="item-auth">
           <a href="mailto:info@devstudio.com" class="nav-text nav-contact link"
-            >info@devstudio.com</a
-          >
+            >info@devstudio.com</a>
         </li>
-        <li><a href="tel:+380961111111" class="nav-text nav-contact link">+38 096 111 11 11</a></li>
+        <li class="item-auth"><a href="tel:+380961111111" class="nav-text nav-contact link">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
 
     <!-- Шапка -->
     <main>
-      <section class="main-baner">
+      <section class="main-baner section">
+        <div class="container">
         <h1 class="baner-text">
           Ефективні рішення <br />
           для вашого бізнесу
         </h1>
         <button type="button" class="button-baner">Замовити послугу</button>
+      </div>
       </section>
 
       <!-- Особливості -->
-      <section>
+      <section class="section">
+      <div class="container">
         <h2 class="visually-hidden">Особливості</h2>
-        <ul class="list">
-          <li>
+        <ul class="list-specifics list">
+          <li class="item-specifics">
             <h3 class="specifics">Внимание к деталям</h3>
             <p class="specifics-text">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
 
-          <li>
+          <li class="item-specifics">
             <h3 class="specifics">Пунктуальность</h3>
             <p class="specifics-text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
 
-          <li>
+          <li class="item-specifics">
             <h3 class="specifics">Планирование</h3>
             <p class="specifics-text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
 
-          <li>
+          <li class="item-specifics">
             <h3 class="specifics">Современные технологии</h3>
             <p class="specifics-text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
         </ul>
+      </div>
       </section>
 
       <!-- Чим ми займаємось -->
-      <section>
+      <section class="section">
+        <div class="container">
         <h2 class="works">Чим ми займаємось</h2>
-        <ul class="list">
-          <li>
+        <ul class="list-works list">
+          <li class="item-works">
             <img src="images/box1.jpg" width="370" height="294" alt="box1" />
           </li>
-          <li>
+          <li class="item-works">
             <img src="images/box2.jpg" width="370" height="294" alt="box2" />
           </li>
-          <li>
+          <li class="item-works">
             <img src="images/box3.jpg" width="370" height="294" alt="box3" />
           </li>
         </ul>
+      </div>
       </section>
 
       <!-- Наша команда -->
-      <section class="about-us">
+      <section class="about-us section">
+        <div class="container">
         <h2 class="teem">Наша команда</h2>
-        <ul class="list">
-          <li>
+        <ul class="aboutus-list list">
+          <li class="item-aboutus">
             <img src="images/img-3.jpg" alt="teamcard1" width="270" height="260" />
             <h3 class="member">Игорь Демьяненко</h3>
             <p class="position">Product Designer</p>
           </li>
 
-          <li>
+          <li class="item-aboutus">
             <img src="images/img-2.jpg" alt="teamcard2" width="270" height="260" />
             <h3 class="member">Ольга Репина</h3>
             <p class="position">Frontend Developer</p>
           </li>
 
-          <li>
+          <li class="item-aboutus">
             <img src="images/img-1.jpg" alt="teamcard3" width="270" height="260" />
             <h3 class="member">Николай Тарасов</h3>
             <p class="position">Marketing</p>
           </li>
 
-          <li>
+          <li class="item-aboutus">
             <img src="images/img.jpg" alt="teamcard4" width="270" height="260" />
             <h3 class="member">Михаил Ермаков</h3>
             <p class="position">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
     <!-- Підвал -->
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="logo link"
         ><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a
       >
       <address>
-        <ul class="list">
+        <ul class="list-footer list">
           <li>
             <a
               class="address nav-text link"
@@ -150,6 +161,7 @@
           <li><a class="contacts nav-text link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
