@@ -3,6 +3,7 @@
   --h-color: #212121;
   --akcent-color: #2196f3;
   --white-color: #ffffff;
+  --border-color: #ececec;
 
   --bg-nav: #ffffff;
   --bg-img: #eeeeee;
@@ -13,29 +14,46 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--text-color);
-  background-color: white;
+  background-color: var(--white-color);
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 img {
   display: block;
+  max-width: 100%;
+}
+
+.address {
+  font-style: normal;
 }
 
 .list {
   list-style: none;
+  padding-left: 0;
+  /* margin: 0; */
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -62,11 +80,10 @@ img {
 /* КІНЕЦЬ ЛОГО */
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
 }
 .header-all {
   display: flex;
-  align-items: center;
 }
 
 .item-auth {
@@ -78,11 +95,12 @@ img {
 .list-auth {
   list-style: none;
   display: flex;
-  padding-left: 0;
 }
 
 .list-auth {
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .item-auth + .item-auth {
@@ -104,11 +122,6 @@ img {
 
 .link {
   text-decoration: none;
-  display: block;
-}
-
-.header {
-  background-color: var(--white-color);
 }
 
 .nav-text,
@@ -119,8 +132,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .current {
@@ -138,16 +151,21 @@ img {
 /* ----------------------------КІНЕЦЬ ХЕДЕРА---------------------------- */
 
 /* ----------------------------БАНЕР---------------------------- */
-.main-baner {
+.section-hero {
   background-color: var(--bg-hero);
-  align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-
-.baner-container {
+.section-paddingtop {
+  padding-top: 94px;
+}
+/* .baner-container {
   width: 1600px;
   height: 600px;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -164,9 +182,9 @@ img {
 }
 
 .baner-text {
-  margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -177,9 +195,8 @@ img {
 }
 
 .button-baner {
-  margin-bottom: 200px;
-  width: 200px;
-  height: 50px;
+  padding: 10px 27px;
+  min-width: 200px;
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
@@ -187,8 +204,15 @@ img {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
   background-color: var(--akcent-color);
   color: var(--white-color);
+}
+
+.button-baner:hover,
+.button-baner:focus {
+  background-color: #188ce8;
 }
 
 .button {
@@ -215,9 +239,6 @@ img {
 
 .list-specifics {
   display: flex;
-  padding-left: 0;
-  margin-top: 50px;
-  margin-bottom: 0;
 }
 
 .item-specifics + .item-specifics {
@@ -230,7 +251,6 @@ img {
 
 .specifics {
   margin-bottom: 10px;
-  margin-top: 0;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -238,9 +258,12 @@ img {
   color: var(--h-color);
 }
 
+.text-decor {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .specifics-text {
-  margin-top: 0;
-  margin-bottom: 0;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -256,15 +279,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--h-color);
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .list-works {
   display: flex;
-  padding-left: 0;
   margin-top: 50px;
-  margin-bottom: 0;
 }
 
 .item-works + .item-works {
@@ -274,8 +293,6 @@ img {
 
 /* ----------------------------КОМАНДА---------------------------- */
 .member {
-  padding-top: 30px;
-  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -287,12 +304,13 @@ img {
 
 .item-aboutus {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .position {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -305,10 +323,7 @@ img {
 
 .aboutus-list {
   display: flex;
-  align-items: center;
-  padding-left: 0;
   margin-top: 50px;
-  margin-bottom: 0;
 }
 
 .item-aboutus + .item-aboutus {
@@ -320,6 +335,11 @@ img {
 .footer {
   background-color: var(--bg-hero);
 }
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .address,
 .contacts {
   padding: 0;
@@ -335,13 +355,14 @@ img {
 }
 
 .list-footer {
-  padding-left: 0;
-  margin: 0;
   padding-bottom: 60px;
 }
 
-.logo {
+.footer-logo {
   margin-bottom: 20px;
+}
+
+.container-footer {
   padding-top: 60px;
 }
 /* ----------------------------КІНЕЦЬ ФУТЕРА---------------------------- */
@@ -360,6 +381,7 @@ img {
   background-color: var(--button-color);
   color: var(--h-color);
   border: none;
+  border-radius: 4px;
 }
 
 .top-filter + .top-filter {
@@ -373,10 +395,9 @@ img {
 }
 
 .example {
+  width: 322px;
   margin: 0;
-  padding-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -385,8 +406,6 @@ img {
 
 .direction {
   margin: 0;
-  padding-bottom: 20px;
-  padding-left: 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -394,9 +413,7 @@ img {
 
 .filter-list {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0;
   margin-bottom: 50px;
   margin-top: 0;
 }
@@ -404,7 +421,6 @@ img {
 .filter-items {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -416,10 +432,18 @@ img {
   margin-right: 30px;
 }
 
+.section-filter {
+  padding: 94px 0px;
+}
+
 .filter-item:nth-child(3n + 3) {
   margin-right: 0;
 }
 
 .filter-item:nth-child(n + 7) {
   margin-bottom: 0;
+}
+
+.element-item {
+  padding: 20px 24px;
 }
