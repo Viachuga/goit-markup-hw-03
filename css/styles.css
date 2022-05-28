@@ -50,7 +50,7 @@ img {
 .list {
   list-style: none;
   padding-left: 0;
-  /* margin: 0; */
+  margin: 0;
 }
 
 .section {
@@ -95,6 +95,7 @@ img {
 .list-auth {
   list-style: none;
   display: flex;
+
 }
 
 .list-auth {
@@ -334,10 +335,12 @@ img {
 /* ----------------------------ФУТЕР---------------------------- */
 .footer {
   background-color: var(--bg-hero);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer-item {
-  margin-bottom: 9px;
+.footer-item + .footer-item {
+  margin-top: 9px;
 }
 
 .address,
@@ -354,17 +357,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+
 .list-footer {
-  padding-bottom: 60px;
+  margin-top: 20px;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
-}
 
-.container-footer {
-  padding-top: 60px;
-}
+
 /* ----------------------------КІНЕЦЬ ФУТЕРА---------------------------- */
 
 /* ----------------------------ДРУГА СТОРІНКА---------------------------- */
